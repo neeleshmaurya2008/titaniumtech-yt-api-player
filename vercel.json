@@ -1,14 +1,3 @@
 {
-  "functions": {
-    "api/index.py": {
-      "runtime": "@vercel/python",
-      "maxDuration": 60
-    }
-  },
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/api"
-    }
-  ]
+  "redirects": [{ "source": "/", "destination": "/api" }]
 }
