@@ -5,6 +5,10 @@ import yt_dlp
 app = Flask(__name__)
 CORS(app)
 
+@app.route("/")
+def home():
+    return "FLASK API LIVE"
+
 # ---------------- PLAYLIST API ----------------
 @app.route("/api/playlist", methods=["GET"])
 def playlist_api():
